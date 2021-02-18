@@ -1,0 +1,41 @@
+// Import variables
+@import "mixins";
+@import "variables";
+@import "colors";
+
+// Molecules
+@import "Upgrade";
+@import "Upgrades";
+@import "Counter";
+@import "QuantityButtons";
+
+// Atoms
+@import "MysteryNote";
+@import "Button";
+
+body {
+  height: 100vh;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: $color2;
+}
+
+.App {
+  padding: $mediumSpacing;
+  box-shadow: $elevated;
+  border-radius: $mediumRadius;
+
+  position: relative;
+
+  width: 500px;
+  height: 400px;
+  margin: auto;
+
+  background-color: $color4;
+  display: grid;
+  grid-template-columns: 40% 1fr;
+}
